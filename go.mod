@@ -1,4 +1,4 @@
-module github.com/fernandosvrosa/algoritmos-estruras-dados-go
+module github.com/fernandosvrosa/algoritmos-estruras-dados
 
 go 1.22
 
