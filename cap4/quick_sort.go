@@ -2,12 +2,12 @@ package cap4
 
 import "math/rand"
 
-func quickSortPivoIndexZero(arr []int) []int {
+func quickSort(arr []int) []int {
 	if len(arr) < 2 {
 		return arr
 	}
 
-	magicNumber := len(arr) + 1
+	magicNumber := len(arr)
 	index := rand.Intn(magicNumber)
 	pivo := arr[index]
 	menores := []int{}
@@ -19,5 +19,5 @@ func quickSortPivoIndexZero(arr []int) []int {
 			maiores = append(maiores, v)
 		}
 	}
-	return append(append(quickSortPivoIndexZero(menores), pivo), quickSortPivoIndexZero(maiores)...)
+	return append(append(quickSort(menores), pivo), quickSort(maiores)...)
 }
