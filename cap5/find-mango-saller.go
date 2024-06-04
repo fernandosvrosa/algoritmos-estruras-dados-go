@@ -35,9 +35,7 @@ func FindMangoSaller(seller Seller) Seller {
 
 		sellersChecked[s.Name] = true
 
-		queue = append(queue, s.frinds...)
-		queue = append(queue[:0], queue[1:]...)
-
+		queue = append(append(queue[:0], queue[1:]...), s.frinds...)
 		continue
 	}
 
