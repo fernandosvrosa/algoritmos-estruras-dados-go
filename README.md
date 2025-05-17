@@ -2,6 +2,8 @@
 
 ## Steps to run the project
 
+test
+
 -- Book
 
     [ingles](https://www.amazon.com.br/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230)
