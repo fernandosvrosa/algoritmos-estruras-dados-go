@@ -43,7 +43,7 @@ func TestFindMangoSaller(t *testing.T) {
 
 		result := FindMangoSaller(mainSaller)
 
-		assert.Equal(t, fifth.Name, result.Name, "Fifth is mangoo seller")
+		assert.Equal(t, fifth.SellerType, result.Name, "Fifth is mango seller")
 
 	})
 
